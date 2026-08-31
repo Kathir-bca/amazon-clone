@@ -138,7 +138,7 @@
   margin-bottom: 8px;
   opacity: 0;
 }
-.added-to-cart-display {
+.js-show-added .js-added-to-cart{
   opacity: 1;
 }
 .added-to-cart img {
