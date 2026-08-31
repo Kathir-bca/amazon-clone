@@ -106,10 +106,3 @@ function selectedCartQuantityInOption(productId) {
     return Number(selectedQuantity);
 }
 
-
-
-// const quantityContainer = document.querySelector('.js-product-quantity-container');
-// const quantityOption = quantityContainer.querySelector('option');
-// const quantityToAdd = quantityOption.value
-// console.log(quantityToAdd);
-// cartQuantity = Number(quantityToAdd) - 1;
