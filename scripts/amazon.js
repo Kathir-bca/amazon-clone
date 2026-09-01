@@ -105,4 +105,3 @@ function selectedCartQuantityInOption(productId) {
     const selectedQuantity = quantitySelector.options[quantitySelector.selectedIndex].value;
     return Number(selectedQuantity);
 }
-

@@ -46,6 +46,1006 @@ export const products = [
     sizeChartLink: "images/clothing-size-chart.png"
   },
   {
+    id: "7a3f9c21-8d54-4e17-b6a2-91c7f04e538b",
+    image: "images/products/realme.png",
+    name: "Realme 10 Pro 5G (Nebula Blue, 128 GB)",
+    rating: {
+      stars: 4.5,
+      count: 184
+    },
+    priceCents: 21005,
+    keywords: [
+      "smartphone",
+      "mobile",
+      "realme",
+      "5g",
+      "electronics"
+    ]
+  },
+  {
+    id: "c82e4f19-35a7-46d2-9b81-e6037ac542f9",
+    image: "images/products/onepiece.png",
+    name: "The Souled Store One Piece T-Shirts",
+    rating: {
+      stars: 5,
+      count: 326
+    },
+    priceCents: 1995,
+    keywords: [
+      "tshirts",
+      "one piece",
+      "anime",
+      "apparel",
+      "fashion"
+    ],
+    type: "clothing",
+    sizeChartLink: "images/clothing-size-chart.png"
+  },
+  {
+    id: "f51b7e63-2c94-4a08-a7d5-39e8126bc450",
+    image: "images/products/laptop.png",
+    name: "MICROSOFT Surface Laptop SQ X2 Elite",
+    rating: {
+      stars: 4.5,
+      count: 241
+    },
+    priceCents: 36750,
+    keywords: [
+      "laptop",
+      "microsoft",
+      "computer",
+      "electronics",
+      "surface"
+    ]
+  },
+  {
+    id: "2d96a541-7b83-4ec0-9f25-c6148a73de09",
+    image: "images/products/tv1.png",
+    name: "Infinix 109 Cm 43 Inch QLED Ultra HD 4K",
+    rating: {
+      stars: 4.5,
+      count: 178
+    },
+    priceCents: 20480,
+    keywords: [
+      "television",
+      "tv",
+      "qled",
+      "4k",
+      "electronics"
+    ]
+  },
+  {
+    id: "b47c2e96-15d8-4a73-86f1-c0295e814ab6",
+    image: "images/products/shoe.png",
+    name: "Nike Mens Precision Mid Basketball Shoes",
+    rating: {
+      stars: 4.5,
+      count: 425
+    },
+    priceCents: 6301,
+    keywords: [
+      "shoes",
+      "basketball",
+      "nike",
+      "sports",
+      "footwear"
+    ]
+  },
+  {
+    id: "e63a91f7-4c25-48d0-b852-17e6c309af42",
+    image: "images/products/rog.png",
+    name: "ASUS ROG Strix G16, AMD Ryzen 9, Gaming Laptop",
+    rating: {
+      stars: 4.5,
+      count: 193
+    },
+    priceCents: 147042,
+    keywords: [
+      "laptop",
+      "gaming",
+      "asus",
+      "rog",
+      "electronics"
+    ]
+  },
+  {
+    id: "91d6b3e8-52f4-47a0-c819-63e7254bf1da",
+    image: "images/products/home T.png",
+    name: "Sony Bravia Theatre Quad (HT-A9M2) Premium",
+    rating: {
+      stars: 4.5,
+      count: 87
+    },
+    priceCents: 199558,
+    keywords: [
+      "home theater",
+      "sony",
+      "speakers",
+      "audio",
+      "electronics"
+    ]
+  },
+  {
+    id: "4e72c9a5-83f1-46bd-a027-59c314e68f20",
+    image: "images/products/watch.png",
+    name: "Noise Fit Halo Plus Smart Watch",
+    rating: {
+      stars: 5,
+      count: 512
+    },
+    priceCents: 3881,
+    keywords: [
+      "smartwatch",
+      "watch",
+      "noise",
+      "wearable",
+      "electronics"
+    ]
+  },
+  {
+    id: "a35f8d27-6c41-49e0-b572-14a936ce80fb",
+    image: "images/products/hphone.png",
+    name: "Sony WH-CH720N, Wireless Headphones with Mic",
+    rating: {
+      stars: 4.5,
+      count: 734
+    },
+    priceCents: 6459,
+    keywords: [
+      "headphones",
+      "sony",
+      "wireless",
+      "noise cancelling",
+      "audio"
+    ]
+  },
+  {
+    id: "d84b1e63-97f5-42ca-a806-31e59c724bf8",
+    image: "images/products/iqoo.webp",
+    name: "IQOO 15 5G (Legend, 256 GB) (12 GB RAM)",
+    rating: {
+      stars: 4.5,
+      count: 386
+    },
+    priceCents: 58228,
+    keywords: [
+      "smartphone",
+      "iqoo",
+      "5g",
+      "mobile",
+      "electronics"
+    ]
+  },
+  {
+    id: "58c7e214-3f96-4ab0-b825-71d63e9fa402",
+    image: "images/products/boat-rockerz.png",
+    name: "boAt Rockerz 450 Pro Wireless Headphones",
+    rating: {
+      stars: 4.5,
+      count: 642
+    },
+    priceCents: 2100,
+    keywords: [
+      "headphones",
+      "boat",
+      "wireless",
+      "bluetooth",
+      "audio"
+    ]
+  },
+  {
+    id: "f29a63d7-84b1-45ce-9702-36e518ac7420",
+    image: "images/products/realme-narzo-power.png",
+    name: "realme Narzo Power 5G (Nebula Blue, 128 GB)",
+    rating: {
+      stars: 4.5,
+      count: 294
+    },
+    priceCents: 31508,
+    keywords: [
+      "smartphone",
+      "realme",
+      "narzo",
+      "5g",
+      "mobile"
+    ]
+  },
+  {
+    id: "b72d4f81-96c3-45a7-e208-13f65c924abd",
+    image: "images/products/puma-sneakers.png",
+    name: "Puma Men's Smashic Sneakers",
+    rating: {
+      stars: 4.5,
+      count: 351
+    },
+    priceCents: 2677,
+    keywords: [
+      "shoes",
+      "sneakers",
+      "puma",
+      "mens",
+      "footwear"
+    ]
+  },
+  {
+    id: "3f81c5e7-62a9-47d4-b036-95e218ac741f",
+    image: "images/products/bellavita.png",
+    name: "Bellavita Luxury Perfume for Men (100ml)",
+    rating: {
+      stars: 4,
+      count: 267
+    },
+    priceCents: 892,
+    keywords: [
+      "perfume",
+      "fragrance",
+      "bellavita",
+      "mens",
+      "beauty"
+    ]
+  },
+  {
+    id: "a67e2d94-38f5-41cb-8096-52b713ce4fa8",
+    image: "images/products/safari-bag.png",
+    name: "Safari Pentagon Laptop Backpack",
+    rating: {
+      stars: 4.5,
+      count: 438
+    },
+    priceCents: 1574,
+    keywords: [
+      "backpack",
+      "laptop bag",
+      "safari",
+      "bags",
+      "travel"
+    ]
+  },
+  {
+    id: "d53b9f26-74c1-48e0-a862-19f635ca7084",
+    image: "images/products/boat-airpods.png",
+    name: "boAt Airdopes 141 True Wireless Earbuds",
+    rating: {
+      stars: 4.5,
+      count: 923
+    },
+    priceCents: 1364,
+    keywords: [
+      "earbuds",
+      "boat",
+      "wireless",
+      "bluetooth",
+      "audio"
+    ]
+  },
+  {
+    id: "8c24e7a1-53f9-46bd-b680-27d914ce35f2",
+    image: "images/products/adidas-shoes.png",
+    name: "Adidas Men's Running Shoes",
+    rating: {
+      stars: 4.5,
+      count: 587
+    },
+    priceCents: 3780,
+    keywords: [
+      "shoes",
+      "running shoes",
+      "adidas",
+      "sports",
+      "footwear"
+    ]
+  },
+  {
+    id: "f61a3d85-29c7-4e90-b742-53e816cb047d",
+    image: "images/products/phillips-mixer.png",
+    name: "Philips HL7756/00 Mixer Grinder (750W)",
+    rating: {
+      stars: 4.5,
+      count: 314
+    },
+    priceCents: 4725,
+    keywords: [
+      "mixer grinder",
+      "philips",
+      "kitchen",
+      "appliances",
+      "mixer"
+    ]
+  },
+  {
+    id: "2a75e9c4-61f3-48bd-9037-c52614e8f0a9",
+    image: "images/products/atomic-habits.png",
+    name: "Atomic Habits by James Clear",
+    rating: {
+      stars: 4.5,
+      count: 1842
+    },
+    priceCents: 349,
+    keywords: [
+      "book",
+      "atomic habits",
+      "james clear",
+      "self help",
+      "personal development"
+    ]
+  },
+  {
+    id: "c96e1a57-42d8-4fb0-b735-68c2149ae301",
+    image: "images/products/samsung-buds.png",
+    name: "Samsung Galaxy Buds Wireless Earbuds",
+    rating: {
+      stars: 4.5,
+      count: 821
+    },
+    priceCents: 5776,
+    keywords: [
+      "earbuds",
+      "samsung",
+      "galaxy buds",
+      "wireless",
+      "audio"
+    ]
+  },
+  {
+    id: "7d31f8a5-69c2-45be-a704-18e936cf52d0",
+    image: "images/products/iphone-15.png",
+    name: "Apple iPhone 15 128GB",
+    rating: {
+      stars: 5,
+      count: 1256
+    },
+    priceCents: 65118,
+    keywords: [
+      "iphone",
+      "apple",
+      "smartphone",
+      "mobile",
+      "electronics"
+    ]
+  },
+  {
+    id: "e48b2c73-15f6-49d0-a821-63ce9574ab06",
+    image: "images/products/sony-headphone.png",
+    name: "Sony Bluetooth Noise Cancelling Headphones",
+    rating: {
+      stars: 4.5,
+      count: 967
+    },
+    priceCents: 9452,
+    keywords: [
+      "headphones",
+      "sony",
+      "bluetooth",
+      "noise cancelling",
+      "audio"
+    ]
+  },
+  {
+    id: "51a9d6f4-83c7-42eb-b015-29e648ca730d",
+    image: "images/products/samsung-tv.png",
+    name: "Samsung 55 inch Smart LED TV",
+    rating: {
+      stars: 4.5,
+      count: 634
+    },
+    priceCents: 45162,
+    keywords: [
+      "tv",
+      "television",
+      "samsung",
+      "smart tv",
+      "electronics"
+    ]
+  },
+  {
+    id: "b83e4c19-57a2-46fd-9015-d6247ac538e0",
+    image: "images/products/nike-shoes.png",
+    name: "Nike Men's Sports Shoes",
+    rating: {
+      stars: 4.5,
+      count: 729
+    },
+    priceCents: 4200,
+    keywords: [
+      "shoes",
+      "nike",
+      "sports",
+      "mens",
+      "footwear"
+    ]
+  },
+  {
+    id: "d27f6a91-45c8-4eb0-a613-82e954cb370f",
+    image: "images/products/american-bag.png",
+    name: "American Tourister Travel Backpack",
+    rating: {
+      stars: 4.5,
+      count: 514
+    },
+    priceCents: 1890,
+    keywords: [
+      "backpack",
+      "travel",
+      "american tourister",
+      "bags",
+      "luggage"
+    ]
+  },
+  {
+    id: "94c1e8f5-72a6-4bd0-b539-16e327ca480d",
+    image: "images/products/logitech-keyboard.png",
+    name: "Logitech Wireless Keyboard",
+    rating: {
+      stars: 4.5,
+      count: 681
+    },
+    priceCents: 1574,
+    keywords: [
+      "keyboard",
+      "logitech",
+      "wireless",
+      "computer accessories",
+      "electronics"
+    ]
+  },
+  {
+    id: "f38a5c72-19e4-46bd-8073-25d961ce4ab0",
+    image: "images/products/zebronics-mouse.png",
+    name: "ZEBRONICS Wireless Mouse",
+    rating: {
+      stars: 4,
+      count: 472
+    },
+    priceCents: 839,
+    keywords: [
+      "mouse",
+      "zebronics",
+      "wireless",
+      "computer accessories",
+      "electronics"
+    ]
+  },
+  {
+    id: "6b24e9d3-58f1-40ac-a762-91ce5374b805",
+    image: "images/products/oneplus-phones.png",
+    name: "OnePlus Nord CE Smartphone",
+    rating: {
+      stars: 4.5,
+      count: 853
+    },
+    priceCents: 23106,
+    keywords: [
+      "smartphone",
+      "oneplus",
+      "nord",
+      "mobile",
+      "5g"
+    ]
+  },
+  {
+    id: "a51d7f83-26c4-49e0-b935-74ce2186ab02",
+    image: "images/products/casio-watch.png",
+    name: "Casio Men's Analog Watch",
+    rating: {
+      stars: 4.5,
+      count: 319
+    },
+    priceCents: 3150,
+    keywords: [
+      "watch",
+      "casio",
+      "mens",
+      "analog",
+      "accessories"
+    ]
+  },
+  {
+    id: "e72c4a19-85f6-43bd-9017-36ce52ab740d",
+    image: "images/products/men-jacket.png",
+    name: "Wildcraft Men's Jacket",
+    rating: {
+      stars: 4.5,
+      count: 276
+    },
+    priceCents: 2835,
+    keywords: [
+      "jacket",
+      "wildcraft",
+      "mens",
+      "clothing",
+      "apparel"
+    ],
+    type: "clothing",
+    sizeChartLink: "images/clothing-size-chart.png"
+  },
+  {
+    id: "39b6e1f5-72a4-48cd-b083-61e927ca540d",
+    image: "images/products/prestige-cooker.png",
+    name: "Prestige Electric Rice Cooker",
+    rating: {
+      stars: 4.5,
+      count: 547
+    },
+    priceCents: 2310,
+    keywords: [
+      "rice cooker",
+      "prestige",
+      "kitchen",
+      "cooker",
+      "appliances"
+    ]
+  },
+  {
+    id: "c74e2a91-56f8-43bd-a016-82d935ce470b",
+    image: "images/products/airpods-pro.webp",
+    name: "Apple AirPods Pro",
+    rating: {
+      stars: 5,
+      count: 1532
+    },
+    priceCents: 19955,
+    keywords: [
+      "airpods",
+      "apple",
+      "earbuds",
+      "wireless",
+      "audio"
+    ]
+  },
+  {
+    id: "8f31d6a4-25c7-49eb-b802-63ce9174a50d",
+    image: "images/products/dell-inspiron.jpg",
+    name: "Dell Inspiron Laptop",
+    rating: {
+      stars: 4.5,
+      count: 421
+    },
+    priceCents: 58816,
+    keywords: [
+      "laptop",
+      "dell",
+      "inspiron",
+      "computer",
+      "electronics"
+    ]
+  },
+  {
+    id: "d62a4f97-81c5-43be-9057-26e318ca740b",
+    image: "images/products/mi-aircooler.png",
+    name: "Mi Smart Air Purifier",
+    rating: {
+      stars: 4.5,
+      count: 389
+    },
+    priceCents: 9452,
+    keywords: [
+      "air purifier",
+      "mi",
+      "home",
+      "air cleaner",
+      "appliances"
+    ]
+  },
+  {
+    id: "47e9c2a5-63f1-48bd-a807-15ce936ab420",
+    image: "images/products/puma-hoodie.jpg",
+    name: "Puma Men's Hoodie",
+    rating: {
+      stars: 4.5,
+      count: 612
+    },
+    priceCents: 1995,
+    keywords: [
+      "hoodie",
+      "puma",
+      "mens",
+      "sweatshirt",
+      "apparel"
+    ],
+    type: "clothing",
+    sizeChartLink: "images/clothing-size-chart.png"
+  },
+  {
+    id: "a83d5f21-74c6-49e0-b927-36ce1584fb02",
+    image: "images/products/levis-jeans.jpg",
+    name: "Levi's Men's Regular Jeans",
+    rating: {
+      stars: 4.5,
+      count: 734
+    },
+    priceCents: 2625,
+    keywords: [
+      "jeans",
+      "levis",
+      "mens",
+      "pants",
+      "apparel"
+    ],
+    type: "clothing",
+    sizeChartLink: "images/clothing-size-chart.png"
+  },
+  {
+    id: "e15b7c93-42f6-48ad-b029-61ce8357a40d",
+    image: "images/products/philips-trimmer.png",
+    name: "Philips Beard Trimmer",
+    rating: {
+      stars: 4.5,
+      count: 892
+    },
+    priceCents: 1259,
+    keywords: [
+      "trimmer",
+      "philips",
+      "beard",
+      "grooming",
+      "beauty"
+    ]
+  },
+  {
+    id: "52c9e4a7-81d3-46bf-9035-27ce615ab840",
+    image: "images/products/havells-heater.jpg",
+    name: "Havells Room Heater",
+    rating: {
+      stars: 4,
+      count: 237
+    },
+    priceCents: 2940,
+    keywords: [
+      "room heater",
+      "havells",
+      "heater",
+      "home",
+      "appliances"
+    ]
+  },
+  {
+    id: "b61f8d35-29c4-47ea-a702-93ce5164f820",
+    image: "images/products/bajaj-mixer.jpg",
+    name: "Bajaj Mixer Grinder",
+    rating: {
+      stars: 4.5,
+      count: 428
+    },
+    priceCents: 3675,
+    keywords: [
+      "mixer grinder",
+      "bajaj",
+      "kitchen",
+      "appliances",
+      "mixer"
+    ]
+  },
+  {
+    id: "f27a5c81-63e9-40bd-b014-58ce936a742d",
+    image: "images/products/nike-tshirt.jpg",
+    name: "Nike Sports T-Shirt",
+    rating: {
+      stars: 4.5,
+      count: 356
+    },
+    priceCents: 1364,
+    keywords: [
+      "tshirt",
+      "nike",
+      "sports",
+      "apparel",
+      "clothing"
+    ],
+    type: "clothing",
+    sizeChartLink: "images/clothing-size-chart.png"
+  },
+  {
+    id: "84c3e7a1-52f6-49bd-a016-37ce925ab480",
+    image: "images/products/samsung-charger.webp",
+    name: "Samsung Fast Charger",
+    rating: {
+      stars: 4.5,
+      count: 647
+    },
+    priceCents: 1049,
+    keywords: [
+      "charger",
+      "samsung",
+      "fast charger",
+      "mobile accessories",
+      "electronics"
+    ]
+  },
+  {
+    id: "d59a2f73-41c8-46be-b027-63ce8154a902",
+    image: "images/products/fastrack-watch.png",
+    name: "Fastrack Men's Watch",
+    rating: {
+      stars: 4.5,
+      count: 418
+    },
+    priceCents: 1890,
+    keywords: [
+      "watch",
+      "fastrack",
+      "mens",
+      "analog",
+      "accessories"
+    ]
+  },
+  {
+    id: "31e7c5a9-82f4-49bd-a063-57ce2148b690",
+    image: "images/products/psychology-money.jpg",
+    name: "The Psychology of Money",
+    rating: {
+      stars: 5,
+      count: 2196
+    },
+    priceCents: 367,
+    keywords: [
+      "book",
+      "psychology of money",
+      "finance",
+      "money",
+      "self help"
+    ]
+  },
+  {
+    id: "a62f9e41-35c7-48bd-b018-74ce5263d905",
+    image: "images/products/headphone.png",
+    name: "boAt Rockerz 450 Pro Wireless Headphones",
+    rating: {
+      stars: 5,
+      count: 756
+    },
+    priceCents: 2205,
+    keywords: [
+      "headphones",
+      "boat",
+      "wireless",
+      "bluetooth",
+      "audio"
+    ]
+  },
+  {
+    id: "e38b5c72-91f4-46ad-a027-63ce8159b402",
+    image: "images/products/realme-16.jpg",
+    name: "realme 16 5G (Air White, 128 GB) (8 GB RAM)",
+    rating: {
+      stars: 4.5,
+      count: 328
+    },
+    priceCents: 32201,
+    keywords: [
+      "smartphone",
+      "realme",
+      "5g",
+      "mobile",
+      "electronics"
+    ]
+  },
+  {
+    id: "c94a7e21-35f8-46bd-a062-81ce5274b903",
+    image: "images/products/1pwhite-tshirt.png",
+    name: "One Piece Skull Oversized T Shirt for Men",
+    rating: {
+      stars: 4.5,
+      count: 384
+    },
+    priceCents: 1364,
+    keywords: [
+      "tshirt",
+      "one piece",
+      "skull",
+      "oversized",
+      "mens"
+    ],
+    type: "clothing",
+    sizeChartLink: "images/clothing-size-chart.png"
+  },
+  {
+    id: "72e5c9a3-41f6-48bd-b027-63ce8154a902",
+    image: "images/products/wild-perfume.png",
+    name: "Wild Stone Eau De Parfum (100ml)",
+    rating: {
+      stars: 4.5,
+      count: 583
+    },
+    priceCents: 629,
+    keywords: [
+      "perfume",
+      "wild stone",
+      "fragrance",
+      "mens",
+      "beauty"
+    ]
+  },
+  {
+    id: "e45a8c73-19f6-42bd-b025-83ce9274d601",
+    image: "images/products/wildcraft-bag.png",
+    name: "Wildcraft Polyester Rucksack for Men & Women – Expedition RSK 45 Backpack",
+    rating: {
+      stars: 4.5,
+      count: 327
+    },
+    priceCents: 1469,
+    keywords: [
+      "backpack",
+      "rucksack",
+      "wildcraft",
+      "travel",
+      "bags"
+    ]
+  },
+  {
+    id: "51e7c9a3-64f8-42bd-a027-15ce8364b902",
+    image: "images/products/car-mirror.png",
+    name: "Blind Spot Rear View Mirror, 360° Rotatable Round HD Convex Mirror",
+    rating: {
+      stars: 4.5,
+      count: 186
+    },
+    priceCents: 414,
+    keywords: [
+      "car accessories",
+      "rear view mirror",
+      "blind spot",
+      "automotive",
+      "car mirror"
+    ]
+  },
+  {
+    id: "a74e2c63-51f9-48bd-a027-83ce9274b601",
+    image: "images/products/toy-100in1.png",
+    name: "Durable 100-in-1 Programmable IoT Electronics Learning Toy | Heavy Duty Material",
+    rating: {
+      stars: 4.5,
+      count: 143
+    },
+    priceCents: 3150,
+    keywords: [
+      "toy",
+      "learning toy",
+      "electronics",
+      "iot",
+      "educational"
+    ]
+  },
+  {
+    id: "b34f8a21-65c7-49ed-a027-15ce8364b902",
+    image: "images/products/new-tshirt.png",
+    name: "The Souled Store Graphic Printed T-Shirt",
+    rating: {
+      stars: 4.5,
+      count: 294
+    },
+    priceCents: 892,
+    keywords: [
+      "tshirt",
+      "graphic",
+      "printed",
+      "souled store",
+      "apparel"
+    ],
+    type: "clothing",
+    sizeChartLink: "images/clothing-size-chart.png"
+  },
+  {
+    id: "d81e5c73-29f4-46bd-b025-61ce9354a702",
+    image: "images/products/new-airpods.png",
+    name: "Apple AirPods Pro (2nd Generation)",
+    rating: {
+      stars: 4.5,
+      count: 1086
+    },
+    priceCents: 26153,
+    keywords: [
+      "airpods",
+      "apple",
+      "wireless",
+      "earbuds",
+      "audio"
+    ]
+  },
+  {
+    id: "49a7c2e5-83f1-48bd-a026-15ce9364b702",
+    image: "images/products/new-puma-shoes.png",
+    name: "Puma Court Classic Vulc Sneakers",
+    rating: {
+      stars: 4.5,
+      count: 413
+    },
+    priceCents: 2940,
+    keywords: [
+      "sneakers",
+      "puma",
+      "shoes",
+      "sports",
+      "footwear"
+    ]
+  },
+  {
+    id: "f63e9a21-57c4-42bd-b025-83ce9274a601",
+    image: "images/products/new-noisefit5.png",
+    name: "Noise ColorFit Pro 5 Smart Watch",
+    rating: {
+      stars: 4.5,
+      count: 528
+    },
+    priceCents: 3675,
+    keywords: [
+      "smartwatch",
+      "noise",
+      "colorfit",
+      "fitness",
+      "wearable"
+    ]
+  },
+  {
+    id: "a25c7e94-61f8-43bd-a027-15ce8364b902",
+    image: "images/products/new-trolley.png",
+    name: "VIP Streak 55cm Hard Trolley",
+    rating: {
+      stars: 4.5,
+      count: 241
+    },
+    priceCents: 4200,
+    keywords: [
+      "trolley",
+      "luggage",
+      "vip",
+      "travel",
+      "suitcase"
+    ]
+  },
+  {
+    id: "c87e1a53-42f9-46bd-b025-61ce9354a702",
+    image: "images/products/samsung-s25.png",
+    name: "Samsung Galaxy S25 Smartphone",
+    rating: {
+      stars: 5,
+      count: 673
+    },
+    priceCents: 78772,
+    keywords: [
+      "smartphone",
+      "samsung",
+      "galaxy",
+      "s25",
+      "mobile"
+    ]
+  },
+  {
+    id: "e41c9a75-63f8-48bd-a027-15ce8364b902",
+    image: "images/products/sony-headphone2.png",
+    name: "Sony Wireless Noise Cancelling Headphones",
+    rating: {
+      stars: 4.5,
+      count: 841
+    },
+    priceCents: 9452,
+    keywords: [
+      "headphones",
+      "sony",
+      "wireless",
+      "noise cancelling",
+      "audio"
+    ]
+  },
+  {
+    id: "52f7c3a9-81e4-46bd-b025-61ce9354a702",
+    image: "images/products/new-boat-air.png",
+    name: "boAt Airdopes True Wireless Earbuds",
+    rating: {
+      stars: 4.5,
+      count: 729
+    },
+    priceCents: 1364,
+    keywords: [
+      "earbuds",
+      "boat",
+      "airdropes",
+      "wireless",
+      "bluetooth"
+    ]
+  },
+  {
     id: "54e0eccd-8f36-462b-b68a-8182611d9add",
     image: "images/products/black-2-slot-toaster.jpg",
     name: "2 Slot Toaster - Black",
@@ -392,24 +1392,6 @@ export const products = [
       "sheets",
       "covers",
       "home"
-    ]
-  },
-  {
-    id: "d2785924-743d-49b3-8f03-ec258e640503",
-    image: "images/products/women-chunky-beanie-gray.webp",
-    name: "Women's Chunky Cable Beanie - Gray",
-    rating: {
-      stars: 5,
-      count: 83
-    },
-    priceCents: 1250,
-    keywords: [
-      "hats",
-      "winter hats",
-      "beanies",
-      "tuques",
-      "apparel",
-      "womens"
     ]
   },
   {

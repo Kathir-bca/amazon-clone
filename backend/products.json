@@ -395,24 +395,6 @@
     ]
   },
   {
-    "id": "d2785924-743d-49b3-8f03-ec258e640503",
-    "image": "images/products/women-chunky-beanie-gray.webp",
-    "name": "Women's Chunky Cable Beanie - Gray",
-    "rating": {
-      "stars": 5,
-      "count": 83
-    },
-    "priceCents": 1250,
-    "keywords": [
-      "hats",
-      "winter hats",
-      "beanies",
-      "tuques",
-      "apparel",
-      "womens"
-    ]
-  },
-  {
     "id": "ee1f7c56-f977-40a4-9642-12ba5072e2b0",
     "image": "images/products/men-chino-pants-beige.jpg",
     "name": "Men's Classic-fit Pleated Chino Pants",
