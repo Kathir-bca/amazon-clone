@@ -1,8 +1,11 @@
-import { cart, removeFromCart, updateDeliveryOption } from '../../data/cart.js';
+import { cart, removeFromCart, updateDeliveryOption, saveToStorage } from '../../data/cart.js';
 import { products, getProducts } from '../../data/products.js';
 import { formatCurrency } from '../utils/money.js';
 import dayjs from 'https://unpkg.com/dayjs@1.11.10/esm/index.js';
 import { deliveryOptions, getDeliveryOption } from '../../data/deliveryOptions.js';
+import { renderPaymentSummary } from './paymentSummary.js';
+import { checkoutUpdate } from './checkoutHeader.js';
+
 
 export function renderOrderSummary() {
 
@@ -68,7 +71,6 @@ export function renderOrderSummary() {
             </div>
         </div>
     `;
-
     });
 
 
@@ -115,6 +117,8 @@ export function renderOrderSummary() {
             link.addEventListener('click', () => {
                 const productId = link.dataset.productId;
                 removeFromCart(productId);
+                renderPaymentSummary();
+                checkoutUpdate();
 
                 const container = document.querySelector(`
                 .js-cart-item-container-${productId}`);
@@ -148,12 +152,36 @@ export function renderOrderSummary() {
 
                 const quantityLabel = container.querySelector('.quantity-label');
                 let oldQuantity = Number(quantityLabel.textContent);
-                oldQuantity += newQuantity;
-                quantityLabel.textContent = oldQuantity
+                let updatedQuantity = oldQuantity += newQuantity;
+                
+                if (((updatedQuantity) > 25) || ((updatedQuantity) < 0) ){
+                    alert('Cart has limit, 25 per product');
+                    quantityInput.value = '';
+                    return;
+                }
+
+                quantityLabel.textContent = updatedQuantity;
                 quantityInput.value = '';
+
+
+
+                cart.forEach((cartItem) => {
+
+                    if (cartItem.productId === productId) {
+
+                        console.log(cartItem.quantity);
+                        cartItem.quantity = updatedQuantity;
+                        saveToStorage();
+                        renderPaymentSummary();
+                        checkoutUpdate();
+
+                    }
+                });
+
             });
 
         });
+
     document.querySelectorAll('.js-delivery-option')
         .forEach((element) => {
             element.addEventListener('click', () => {
@@ -161,7 +189,12 @@ export function renderOrderSummary() {
 
                 updateDeliveryOption(productId, deliveryOptionId);
                 renderOrderSummary();
+                renderPaymentSummary();
+
             });
         });
 }
+
+
+
 renderOrderSummary();
