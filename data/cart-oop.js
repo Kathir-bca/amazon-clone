@@ -76,6 +76,7 @@ function Cart(localStoragekey) {
     };
     return cart;
 }
+
 const cart = Cart('cart-oop');
 const businessCart = Cart('cart-business');
 
