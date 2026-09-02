@@ -1,5 +1,8 @@
 import { formatCurrency } from '../scripts/utils/money.js';
 
+
+console.log('test suite: formatCurrency')
+
 console.log('with normal value');
 
 if ((formatCurrency(1095)) === '10.95') {
