@@ -123,13 +123,27 @@
 }
 
 .product-quantity-container {
-  margin-bottom: 17px;
+  margin-bottom: 8px;
 }
 
 .product-spacer {
   flex: 1;
 }
+.product-other-info{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.product-other-info .size-fashion{
+  font-size: 12px;
+  border: none;
+}
 
+.product-other-info a, .product-other-info  p{
+  font-size: 14px;
+  font-weight: 500;
+}
 .added-to-cart {
   color: rgb(6, 125, 98);
   font-size: 16px;

@@ -32,27 +32,77 @@ class Product {
   getPrice() {
     return ` $${formatCurrency(this.priceCents)}`;
   }
+  getFeatureInfo() {
+    return '';
+  }
+  getWarranty() {
+    return ``;
+  }
 }
 
+class Clothing extends Product {
+  sizeChartLink;
+  constructor(productDetails) {
+    super(productDetails)
+    this.sizeChartLink = productDetails.sizeChartLink;
+  }
+  getFeatureInfo() {
+    return `<a href="${this.sizeChartLink}">Size Chart</a>
+            <select class= "size-fashion">
+                <option selected value="1">S</option>
+                <option value="2">M</option>
+                <option value="3">L</option>
+                <option value="4">XL</option>
+                <option value="5">XXL</option>
+            </select>`
+  }
+  getWarranty() {
+    return '';
+  }
+}
 
+class Appliance extends Product {
+  applianceInstruction;
+  applianceWarranty;
+  constructor(productDetails) {
+    super(productDetails)
+    this.applianceInstruction = "images/appliance-instructions.png";
+    this.applianceWarranty = "images/appliance-warranty.png";
+  }
 
-// const product1 = new Product({
-//   id: "e43638ce-6aa0-4b85-b27f-e1d07eb678c6",
-//   image: "images/products/athletic-cotton-socks-6-pairs.jpg",
-//   name: "Black and Gray Athletic Cotton Socks - 6 Pairs",
-//   rating: {
-//     stars: 4.5,
-//     count: 87
-//   },
-//   priceCents: 1090,
-//   keywords: [
-//     "socks",
-//     "sports",
-//     "apparel"
-//   ]
-// });
+  getFeatureInfo() {
+    return `<a href=${this.applianceInstruction}>Instructions</a>`
+  }
+  getWarranty() {
+    return `<a href=${this.applianceWarranty}>Warranty</a>`
+  }
+}
 
-
+class Shoes extends Product {
+  sizeChartLink;
+  constructor(productDetails) {
+    super(productDetails)
+    this.sizeChartLink = '';
+  }
+  getFeatureInfo() {
+    return `<p>Size: </p>
+            <select class= "size-fashion">
+                <option selected value="1">5</option>
+                <option value="2">6</option>
+                <option value="3">7</option>
+                <option value="4">8</option>
+                <option value="5">9</option>
+                <option value="6">10</option>
+                <option value="7">11</option>
+                <option value="8">12</option>
+                <option value="9">13</option>
+                <option value="10">14</option>
+            </select>`
+  }
+  getWarranty() {
+    return '';
+  }
+}
 
 
 export const products = [
@@ -1159,7 +1209,9 @@ export const products = [
       "hoodies",
       "sweaters",
       "apparel"
-    ]
+    ],
+    type: "clothing",
+    sizeChartLink: "images/clothing-size-chart.png"
   },
   {
     id: "77919bbe-0e56-475b-adde-4f24dfed3a04",
@@ -1285,7 +1337,9 @@ export const products = [
       "shorts",
       "apparel",
       "mens"
-    ]
+    ],
+    type: "clothing",
+    sizeChartLink: "images/clothing-size-chart.png"
   },
   {
     id: "c2a82c5e-aff4-435f-9975-517cfaba2ece",
@@ -1464,7 +1518,9 @@ export const products = [
       "pants",
       "apparel",
       "mens"
-    ]
+    ],
+    type: "clothing",
+    sizeChartLink: "images/clothing-size-chart.png"
   },
   {
     id: "1c079479-8586-494f-ab53-219325432536",
@@ -1543,7 +1599,9 @@ export const products = [
       "jogging",
       "apparel",
       "womens"
-    ]
+    ],
+    type: "clothing",
+    sizeChartLink: "images/clothing-size-chart.png"
   },
   {
     id: "d339adf3-e004-4c20-a120-40e8874c66cb",
@@ -1694,10 +1752,23 @@ export const products = [
       "hoodies",
       "apparel",
       "mens"
-    ]
+    ],
+    type: "clothing",
+    sizeChartLink: "images/clothing-size-chart.png"
   }
-].map((priceDetails) => {
-  return new Product(priceDetails);
+].map((productDetails) => {
+  if (productDetails.type === 'clothing') {
+    return new Clothing(productDetails);
+  }
+  console.log((productDetails.keywords.includes("appliances")));
+
+  if (productDetails.keywords.includes("appliances")) {
+    return new Appliance(productDetails);
+  }
+  if (productDetails.keywords.includes("shoes")) {
+    return new Shoes(productDetails);
+  }
+  return new Product(productDetails);
 });
 
 
