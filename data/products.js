@@ -162,7 +162,7 @@ export function loadProducts(callback) {
 
     callback();
   })
-  xhr.open('GET', '../backend/products.json');
+  xhr.open('GET', 'https://kathir-bca.github.io/products/products.json');
   xhr.send();
 
 }
