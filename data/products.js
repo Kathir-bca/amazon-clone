@@ -111,7 +111,7 @@ export let products = [];
 
 export function loadProductsFetch() {
   const promise = fetch(
-    'https://kathir-bca.github.io/products/products.json'
+    '../backend/products.json'
   ).then((response) => {
 
     return response.json();
