@@ -3,12 +3,16 @@ import { renderPaymentSummary } from './checkout/paymentSummary.js';
 import { checkoutUpdate } from './checkout/checkoutHeader.js';
 // import '../data/cart-class.js'
 // import '../data/backend-practice.js'
-import { loadProducts } from '../data/products.js';
+import { loadProducts, loadProductsFetch } from '../data/products.js';
 
 
-loadProducts(() => {
-    checkoutUpdate();
-    renderOrderSummary();
-    renderPaymentSummary();
-})
+
+loadProductsFetch()
+    .then(() => {
+        checkoutUpdate();
+        renderOrderSummary();
+        renderPaymentSummary();
+    });
+
+
 
