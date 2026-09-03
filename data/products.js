@@ -111,7 +111,7 @@ export let products = [];
 
 export function loadProductsFetch() {
   const promise = fetch(
-    '../backend/products.json'
+    'https://kathir-bca.github.io/products/products.json'
   ).then((response) => {
 
     return response.json();
@@ -162,7 +162,7 @@ export function loadProducts(callback) {
 
     callback();
   })
-  xhr.open('GET', 'https://kathir-bca.github.io/products/products.json');
+  xhr.open('GET', '../backend/products.json');
   xhr.send();
 
 }
