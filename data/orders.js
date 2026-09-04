@@ -1,5 +1,5 @@
 
-import { cart, totalCartQuantityUpadte } from "./cart.js";
+import { cart, totalCartQuantityUpdate } from "./cart.js";
 import { products, getProducts, loadProducts } from './products.js';
 import { renderPaymentSummary } from "../scripts/checkout/paymentSummary.js";
 import { getDeliveryOption } from "./deliveryOptions.js";
@@ -32,7 +32,7 @@ export function renderOrders() {
         orders.forEach((order) => {
 
             const quantityEl = document.querySelector('.cart-quantity');
-            if (quantityEl) quantityEl.innerHTML = totalCartQuantityUpadte();
+            if (quantityEl) quantityEl.innerHTML = totalCartQuantityUpdate();
 
             const container = document.querySelector('.js-order-container');
             if (!container) return; // not on the orders page, stop here
