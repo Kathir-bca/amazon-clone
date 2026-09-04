@@ -65,7 +65,7 @@ function Cart(localStoragekey) {
 
             this.saveToStorage();
         },
-        totalCartQuantityUpadte() {
+        totalCartQuantityUpdate() {
             let totalCartQuantity = 0;
             this.cartItems.forEach((cartItem) => {
                 totalCartQuantity += cartItem.quantity;
