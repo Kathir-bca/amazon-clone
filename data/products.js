@@ -1,16 +1,5 @@
 import { formatCurrency } from "../scripts/utils/money.js";
 
-export function getProducts(productId) {
-  let matchingProduct;
-
-  products.forEach((product) => {
-    if (product.id == productId) {
-      matchingProduct = product;
-    }
-  });
-
-  return matchingProduct;
-}
 
 
 class Product {
@@ -105,7 +94,7 @@ class Shoes extends Product {
     return '';
   }
 }
-
+loadProductsFetch()
 export let products = [];
 
 
@@ -130,15 +119,11 @@ export function loadProductsFetch() {
       }
       return new Product(productDetails);
     });
-    console.log(products);
-    
+
   })
   return promise;
 }
 
-// loadProductsFetch().then(()=>{
-//   console.log('next step');
-// })
 
 
 
@@ -161,9 +146,21 @@ export function loadProducts(callback) {
     });
 
     callback();
-  })
+  });
+
   xhr.open('GET', 'https://kathir-bca.github.io/products/products.json');
   xhr.send();
 
 }
 
+
+export function getProducts(productId) {
+  let matchingProduct;
+
+  products.forEach((product) => {
+    if (product.id === productId) {
+      matchingProduct = product;
+    }
+  });
+  return matchingProduct;
+}

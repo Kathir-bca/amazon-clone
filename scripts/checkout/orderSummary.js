@@ -9,6 +9,7 @@ import { checkoutUpdate } from './checkoutHeader.js';
 
 
 //for rendering checkout products
+
 export function renderOrderSummary() {
 
     let cartSummaryHTML = '';
@@ -18,7 +19,7 @@ export function renderOrderSummary() {
         const productId = cartItem.productId;
 
         let matchingProduct = getProducts(productId);
-
+ 
         const deliveryOptionId = cartItem.deliveryOptionId;
 
         let matchingDeliveryOption = getDeliveryOption(deliveryOptionId);

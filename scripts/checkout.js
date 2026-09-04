@@ -5,13 +5,29 @@ import { checkoutUpdate } from './checkout/checkoutHeader.js';
 // import '../data/backend-practice.js'
 import { loadProducts, loadProductsFetch } from '../data/products.js';
 
+async function loadPage() {
+    try {
 
+        await loadProductsFetch();
 
-loadProductsFetch()
-    .then(() => {
-        checkoutUpdate();
-        renderOrderSummary();
-        renderPaymentSummary();
-    });
+    } catch (error) {
+
+        alert('Unexpected Error, Please Try Again Later')
+    
+    }
+
+    checkoutUpdate();
+    renderOrderSummary();
+    renderPaymentSummary();
+}
+
+loadPage();
+
+// loadProductsFetch()
+//     .then(() => {
+//         checkoutUpdate();
+//         renderOrderSummary();
+//         renderPaymentSummary();
+//     });
 
 
