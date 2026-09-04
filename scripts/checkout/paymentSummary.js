@@ -1,4 +1,4 @@
-import { cart, totalCartQuantityUpadte } from "../../data/cart.js";
+import { cart, totalCartQuantityUpdate } from "../../data/cart.js";
 import { products, getProducts } from '../../data/products.js';
 import { getDeliveryOption } from "../../data/deliveryOptions.js";
 import { formatCurrency } from '../utils/money.js';
@@ -24,7 +24,7 @@ export function renderPaymentSummary() {
     const totalBeforeTaxCents = productPriceCents + shippingPriceCents;
     const taxCents = Math.round(totalBeforeTaxCents * 0.1);
     const totalCents = totalBeforeTaxCents + taxCents;
-    const totalCartQuantity = totalCartQuantityUpadte();
+    const totalCartQuantity = totalCartQuantityUpdate();
     let paymentSummaryContainer = document.querySelector('.js-payment-summary');
 
     paymentSummaryContainer.innerHTML =
