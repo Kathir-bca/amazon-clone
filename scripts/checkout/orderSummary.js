@@ -129,8 +129,7 @@ export function renderOrderSummary() {
                 renderPaymentSummary();
                 checkoutUpdate();
 
-                const container = document.querySelector(`
-                .js-cart-item-container-${productId}`);
+                const container = document.querySelector(`.js-cart-item-container-${productId}`);
                 container.remove();
             });
         });
@@ -140,8 +139,7 @@ export function renderOrderSummary() {
         .forEach((link) => {
             link.addEventListener('click', () => {
                 const productId = link.dataset.productId;
-                const container = document.querySelector(`
-                .js-cart-item-container-${productId}`);
+                const container = document.querySelector(`.js-cart-item-container-${productId}`);
                 container.classList.add('is-editing-quantity');
             });
 
@@ -154,8 +152,7 @@ export function renderOrderSummary() {
         .forEach((link) => {
             const productId = link.dataset.productId;
             function saveQuantity() {
-                const container = document.querySelector(`
-                        .js-cart-item-container-${productId}`);
+                const container = document.querySelector(`.js-cart-item-container-${productId}`);
                 container.classList.remove('is-editing-quantity');
 
                 const quantityInput = container.querySelector('.js-quantity-input');
@@ -163,7 +160,7 @@ export function renderOrderSummary() {
 
                 const quantityLabel = container.querySelector('.quantity-label');
                 let oldQuantity = Number(quantityLabel.textContent);
-                let updatedQuantity = oldQuantity += newQuantity;
+                let updatedQuantity = oldQuantity + newQuantity;
 
                 if (((updatedQuantity) > 25) || ((updatedQuantity) < 0)) {
                     alert('Cart has limit, 25 per product');
@@ -213,7 +210,5 @@ export function renderOrderSummary() {
             });
         });
 }
-
-
 
 
