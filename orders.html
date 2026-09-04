@@ -5,8 +5,8 @@
   <title>Orders</title>
 
   <!-- This code is needed for responsive design to work.
-      (Responsive design = make the website look good on
-      smaller screen sizes like a phone or a tablet). -->
+       (Responsive design = make the website look good on
+       smaller screen sizes like a phone or a tablet). -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Load a font called Roboto from Google Fonts. -->
@@ -83,9 +83,9 @@
   </div>
   <script src="data/orders.js" type="module"></script>
   <script type="module">
-    import { cart, totalCartQuantityUpadte } from "./cart.js";
+    import { cart, totalCartQuantityUpdate } from "./data/cart.js";
 
-    document.querySelector('.cart-quantity').innerHTML = totalCartQuantityUpadte();
+    document.querySelector('.cart-quantity').innerHTML = totalCartQuantityUpdate();
   </script>
 </body>
 
