@@ -125,7 +125,7 @@ class StockUnavailable extends Product {
   }
 
   getFeatureInfo() {
-    return `<p>${this.stock}</p>`;
+    return `<h1>Currently ${this.stock} <img src="images/icons/empty.png"></h1>`;
   }
 
   getWarranty() {
