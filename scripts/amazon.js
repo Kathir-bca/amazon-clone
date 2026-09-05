@@ -88,10 +88,18 @@ function renderProductsGrid() {
 
                 const productId = button.dataset.productId;
                 const selectedQuantity = selectedCartQuantityInOption(productId);
+                products.forEach((product) => {
+                    if (product.id === productId) {
+                        if (product.stock === 'unavailable') {
+                            alert(`Product didn't available in Stock`);
+                        } else {
+                            addToCart(productId, selectedQuantity);
+                            updateCartQuantity();
+                            showAdded(productId);
+                        }
+                    }
+                })
 
-                addToCart(productId, selectedQuantity);
-                updateCartQuantity();
-                showAdded(productId);
             });
         });
 
@@ -103,7 +111,6 @@ function renderProductsGrid() {
             addedProductId.classList.remove('js-show-added');
         }, 4000);
     }
-
 
 
     function selectedCartQuantityInOption(productId) {

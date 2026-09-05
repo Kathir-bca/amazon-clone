@@ -1,6 +1,6 @@
 import { cart, totalCartQuantityUpdate } from "./cart.js";
 import { orders } from "./orders.js";
-import {  getProducts, loadProducts } from './products.js';
+import { getProducts, loadProducts } from './products.js';
 import dayjs from 'https://unpkg.com/dayjs@1.11.10/esm/index.js';
 
 document.getElementById('js-cart-quantity').innerHTML = totalCartQuantityUpdate();
@@ -13,20 +13,45 @@ loadProducts(
         const trackingProduct = getProducts(trackingProductId);
 
         let trackingOrder;
+        let arrivingDate;
         getOrder()
         function getOrder() {
             orders.forEach((order) => {
                 if (order.id === trackingOrderId) {
                     trackingOrder = order;
+                    trackingOrder.products.forEach((product) => {
+                        if (trackingProductId === product.productId) {
+                            arrivingDate = dayjs(product.estimatedDeliveryTime).format('dddd, MMMM D');
+                        }
+                    })
                 }
             })
         }
 
-        let arrivingDate = dayjs(trackingOrder.estimatedDeliveryTime).format('dddd, MMMM D');
+        const orderStart = dayjs(trackingOrder.orderTime).valueOf();
+        const deliveryEnd = dayjs(arrivingDate).valueOf();
+        const now = dayjs().valueOf();
+        const totalDuration = deliveryEnd;
+        const elapsed = now - orderStart;
+
+        let progressPercent = (elapsed / totalDuration) * 100;
+        progressPercent = Math.min(Math.max(progressPercent, 0), 100);
+
+
+
+        let currentStatus;
+        if (progressPercent < 33) {
+            currentStatus = 'Preparing';
+        } else if (progressPercent < 100) {
+            currentStatus = 'Shipped';
+        } else {
+            currentStatus = 'Delivered';
+        }
+
 
         let trackingOrderQuantity;
         cart.forEach((cartItem) => {
-            if(cartItem.productId === trackingProductId){
+            if (cartItem.productId === trackingProductId) {
                 trackingOrderQuantity = cartItem.quantity;
             }
         })
@@ -55,21 +80,28 @@ loadProducts(
                 <img class="product-image" src="${trackingProduct.image}">
 
                 <div class="progress-labels-container">
-                <div class="progress-label">
+                <div class="progress-label ${currentStatus === 'Preparing' ? 'current-status' : ''}">
                     Preparing
                 </div>
-                <div class="progress-label current-status">
+                <div class="progress-label ${currentStatus === 'Shipped' ? 'current-status' : ''}">
                     Shipped
                 </div>
-                <div class="progress-label">
+                <div class="progress-label ${currentStatus === 'Delivered' ? 'current-status' : ''}">
                     Delivered
                 </div>
                 </div>
 
                 <div class="progress-bar-container">
-                <div class="progress-bar"></div>
+                <div class="progress-bar" style="width: 0%"></div>
                 </div>
             `
 
-            container.innerHTML = trackingHTML;
+        container.innerHTML = trackingHTML;
+
+        // animate the fill after render
+
+        requestAnimationFrame(() => {
+            document.querySelector('.progress-bar').style.width = `${progressPercent > 2 ? progressPercent : 2}%`;
+        });
     })
+
