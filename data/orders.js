@@ -16,6 +16,7 @@ export function addOrder(order) {
     saveToStorage()
 }
 
+
 function saveToStorage() {
     localStorage.setItem('orders', JSON.stringify(orders));
 }
@@ -66,7 +67,7 @@ export function renderOrders() {
                     </div>
 
                     <div class="product-actions">
-                        <a href="tracking.html">
+                        <a href="tracking.html?orderId=${order.id}&productId=${matchingProduct.id}">
                             <button class="track-package-button button-secondary">
                                 Track package
                             </button>
