@@ -4,7 +4,7 @@ import { getDeliveryOption } from "../../data/deliveryOptions.js";
 import { formatCurrency } from '../utils/money.js';
 import { addOrder } from "../../data/orders.js";
 import { renderOrders } from "../../data/orders.js";
-
+import { renderOrderSummary } from "./orderSummary.js";
 
 
 
@@ -58,13 +58,23 @@ export function renderPaymentSummary() {
                     <div class="payment-summary-money">$${formatCurrency(totalCents)}</div>
                 </div>
 
-                <button class="place-order-button button-primary js-place-order">
+                <button class="place-order-button button-primary js-place-order ">
                     Place your order
                 </button>
             ` ;
 
+    if (cart.length === 0) {
+        let placeOrderBtn = document.querySelector('.place-order-button');
+        placeOrderBtn.classList.remove('js-place-order')
+        placeOrderBtn.style.opacity = 0.5;
+        document.querySelector('.cart-empty').style.display = 'initial';
+        renderOrderSummary();
+    }
+
+
     document.querySelector('.js-place-order')
         .addEventListener('click', async () => {
+
             try {
 
                 const response = await fetch('https://supersimplebackend.dev/orders', {
@@ -76,33 +86,15 @@ export function renderPaymentSummary() {
                         cart: cart
                     })
                 });
+
                 const order = await response.json();
                 addOrder(order);
-                renderOrders()          
+                renderOrders()
                 window.location.href = "orders.html";
-                
+
             } catch (error) {
                 alert('Unexpected Error, Please Try Again.')
             }
 
         });
 }
-
-
-// replacemnt for api
-
-// document.querySelector('.js-place-order')
-//     .addEventListener('click', async () => {
-//         try {
-
-//             cart.forEach((order) => {
-//                 addOrder(order, totalCents)
-//             })
-
-//             renderOrders(totalCents);
-//             window.location.href = "orders.html";
-
-//         } catch (error) {
-//             alert('Unexpected Error, Please Try Again.')
-//         }
-//     })

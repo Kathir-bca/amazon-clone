@@ -113,21 +113,25 @@
 .product-quantity .link-primary {
   margin-left: 3px;
 }
-.quantity-input{
+
+.quantity-input {
   width: 30px;
 }
-.quantity-input, .save-quantity-link {
+
+.quantity-input,
+.save-quantity-link {
   display: none;
 }
 
 .is-editing-quantity .quantity-input,
-.is-editing-quantity .save-quantity-link 
-{
+.is-editing-quantity .save-quantity-link {
   display: initial;
 }
-.is-editing-quantity .update-quantity-link{
+
+.is-editing-quantity .update-quantity-link {
   display: none;
 }
+
 @media (max-width: 1000px) {
   .delivery-options {
     /* grid-column: 1 means this element will be placed
@@ -217,4 +221,27 @@
 
   margin-top: 11px;
   margin-bottom: 15px;
+}
+.cart-empty{
+  display: none;
+}
+.cart-empty p {
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.cart-empty button {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-radius: 8px;
+  background-color: rgb(255, 216, 20);
+  border: 1px solid rgb(252, 210, 0);
+  font-size: 12px;
+  font-weight: 500;
+  transition: all ease 0.3s;
+}
+.cart-empty button:hover{
+  opacity: 0.7;
 }
