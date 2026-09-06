@@ -79,6 +79,8 @@ function renderProductsGrid() {
 
         let showCartQuantity = document.querySelector('.js-cart-quantity');
         showCartQuantity.textContent = cartQuantity;
+        document.querySelector('.js-cart-quantity-mobile').textContent = cartQuantity
+
     }
 
     document.querySelectorAll('.js-add-to-cart')
@@ -120,3 +122,20 @@ function renderProductsGrid() {
     }
 
 }
+
+
+//hamburger menu for mobile
+
+let menu = document.querySelector('.menu-dropdown');
+let isOpen = false;
+document.querySelector('.js-mobile-right-section').addEventListener('click', () => {
+
+    if (!isOpen) {
+        menu.classList.add('menu-dropdown-show');
+        isOpen = true;
+
+    } else {
+        menu.classList.remove('menu-dropdown-show');
+        isOpen = false;
+    }
+})

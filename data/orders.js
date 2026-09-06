@@ -34,7 +34,6 @@ export function renderOrders() {
             let orderContainerHTML = '';
             const quantityEl = document.querySelector('.cart-quantity');
             if (quantityEl) quantityEl.innerHTML = totalCartQuantityUpdate();
-
             const container = document.querySelector('.js-order-container');
             if (!container) return; // not on the orders page, stop here
 
@@ -107,3 +106,5 @@ export function renderOrders() {
     });
 }
 renderOrders()
+
+

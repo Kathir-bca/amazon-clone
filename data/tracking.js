@@ -105,3 +105,19 @@ loadProducts(
         });
     })
 
+document.querySelector('.js-cart-quantity-mobile').innerHTML = totalCartQuantityUpdate();
+
+let menu = document.querySelector('.menu-dropdown');
+let isOpen = false;
+document.querySelector('.js-mobile-right-section')
+    .addEventListener('click', () => {
+
+        if (!isOpen) {
+            menu.classList.add('menu-dropdown-show');
+            isOpen = true;
+
+        } else {
+            menu.classList.remove('menu-dropdown-show');
+            isOpen = false;
+        }
+    })
