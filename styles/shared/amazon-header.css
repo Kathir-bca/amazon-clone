@@ -74,6 +74,10 @@
     display: block;
   }
 
+  .mobile-right-section {
+    cursor: pointer;
+  }
+
   .menu-dropdown-show {
     background-color: rgb(19, 25, 33);
     padding-bottom: 10px;
