@@ -105,7 +105,7 @@
 }
 
 .product-price {
-  color: rgb(177, 39, 4);
+  color: #1D4ED8;
   font-weight: 700;
   margin-bottom: 5px;
 }
@@ -205,7 +205,7 @@
 }
 
 .total-row {
-  color: rgb(177, 39, 4);
+  color: #1D4ED8;
   font-weight: 700;
   font-size: 18px;
 
@@ -236,12 +236,14 @@
   padding-top: 12px;
   padding-bottom: 12px;
   border-radius: 8px;
-  background-color: rgb(255, 216, 20);
-  border: 1px solid rgb(252, 210, 0);
+  color: white;
+  background-color: #1D4ED8;
+  border: 1px solid #1D4ED8;
   font-size: 12px;
   font-weight: 500;
   transition: all ease 0.3s;
 }
 .cart-empty button:hover{
-  opacity: 0.7;
+  background-color: #1E40AF;
+  border-color: #1E40AF;
 }

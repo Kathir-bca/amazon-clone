@@ -1,6 +1,7 @@
 .kartlyn-header {
-  background-color: rgb(19, 25, 33);
-  color: white;
+  background-color: #F8FAFC;
+  color: #111827;
+  border-bottom: 1px solid #E5E7EB;
   padding-left: 15px;
   padding-right: 15px;
 
@@ -43,7 +44,7 @@
 }
 
 .header-link:hover {
-  border: 1px solid white;
+  border: 1px solid #E5E7EB;
 }
 
 .kartlyn-logo {
@@ -88,7 +89,8 @@
   }
 
   .menu-dropdown-show {
-    background-color: rgb(19, 25, 33);
+    background-color: #F8FAFC;
+    border-bottom: 1px solid #E5E7EB;
     padding-bottom: 10px;
     display: grid;
     width: 100%;
@@ -99,7 +101,7 @@
   }
 
   .menu-dropdown-show a {
-    color: white;
+    color: #111827;
     text-decoration: none;
     font-size: 18px;
   }
@@ -127,7 +129,7 @@
 }
 
 .search-button {
-  background-color: rgb(254, 189, 105);
+  background-color: #1D4ED8;
   border: none;
   width: 45px;
   height: 40px;
@@ -136,10 +138,15 @@
   flex-shrink: 0;
 }
 
+.search-button:hover {
+  background-color: #1E40AF;
+}
+
 .search-icon {
   height: 22px;
   margin-left: 2px;
   margin-top: 3px;
+  filter: brightness(0) invert(1);
 }
 
 .kartlyn-header-right-section {
@@ -150,7 +157,7 @@
 }
 
 .orders-link {
-  color: white;
+  color: #111827;
 }
 
 .returns-text {
@@ -165,7 +172,7 @@
 }
 
 .cart-link {
-  color: white;
+  color: #111827;
   display: flex;
   align-items: center;
   position: relative;
@@ -173,6 +180,7 @@
 
 .cart-icon {
   width: 50px;
+  filter: brightness(0);
 }
 
 .cart-text {
@@ -182,7 +190,7 @@
 }
 
 .cart-quantity {
-  color: rgb(240, 136, 4);
+  color: #1D4ED8;
   font-size: 16px;
   font-weight: 700;
 
@@ -195,7 +203,7 @@
 }
 
 .menu-dropdown span {
-  color: rgb(240, 136, 4);
+  color: #1D4ED8;
   font-size: 16px;
   font-weight: 700;
 

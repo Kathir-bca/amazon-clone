@@ -2,7 +2,8 @@
   height: 60px;
   padding-left: 30px;
   padding-right: 30px;
-  background-color: white;
+  background-color: #F8FAFC;
+  border-bottom: 1px solid #E5E7EB;
 
   display: flex;
   justify-content: center;
@@ -69,7 +70,7 @@
 }
 
 .return-to-home-link {
-  color: rgb(0, 113, 133);
+  color: #1D4ED8;
   font-size: 23px;
   text-decoration: none;
   cursor: pointer;
