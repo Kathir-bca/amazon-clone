@@ -2,57 +2,47 @@
 <html>
 
 <head>
-  <title>Tracking</title>
-
-  <!-- This code is needed for responsive design to work.
-      (Responsive design = make the website look good on
-      smaller screen sizes like a phone or a tablet). -->
+  <title>KartLyn Tracking</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- Load a font called Roboto from Google Fonts. -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-
-  <!-- Here are the CSS files for this page. -->
   <link rel="stylesheet" href="styles/shared/general.css">
   <link rel="stylesheet" href="styles/shared/amazon-header.css">
   <link rel="stylesheet" href="styles/pages/tracking.css">
 </head>
 
 <body>
-  <div class="amazon-header">
-    <div class="amazon-header-left-section">
+  <div class="kartlyn-header">
+    <div class="kartlyn-header-left-section">
       <a href="index.html" class="header-link">
-        <img class="amazon-logo" src="images/amazon-logo-white.png">
-        <img class="amazon-mobile-logo" src="images/amazon-mobile-logo-white.png">
+        <img class="kartlyn-logo" src="images/Kartlyn.webp">
+        <img class="kartlyn-mobile-logo" src="images/Kartlyn-mobile.webp">
       </a>
     </div>
 
-    <div class="amazon-header-middle-section">
-      <input class="search-bar" type="text" placeholder="Search">
-
+    <div class="kartlyn-header-middle-section">
+      <input class="search-bar" type="text" placeholder="Search KartLyn">
       <button class="search-button">
         <img class="search-icon" src="images/icons/search-icon.png">
       </button>
     </div>
 
-    <div class="amazon-header-right-section">
+    <div class="kartlyn-header-right-section">
       <a class="orders-link header-link" href="orders.html">
         <span class="returns-text">Returns</span>
         <span class="orders-text">& Orders</span>
       </a>
-
       <a class="cart-link header-link" href="checkout.html">
         <img class="cart-icon" src="images/icons/cart-icon.png">
         <div class="cart-quantity" id="js-cart-quantity">3</div>
         <div class="cart-text">Cart</div>
       </a>
     </div>
+
     <div class="mobile-right-section js-mobile-right-section">
       <img src="images/icons/hamburger-menu.png" alt="Menu" class="hamburger-menu">
     </div>
-
   </div>
 
   <div class="menu-dropdown">
@@ -67,8 +57,7 @@
       </a> -->
     </div>
   </div>
-  <script src="data/tracking.js" type="module">
-  </script>
+  <script src="data/tracking.js" type="module"></script>
 </body>
 
 </html>
