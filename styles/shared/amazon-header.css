@@ -1,7 +1,7 @@
 .kartlyn-header {
-  background-color: #F8FAFC;
+  background-color: #dee0e7;
   color: #111827;
-  border-bottom: 1px solid #E5E7EB;
+  border-bottom: 1px solid #d9dbdf;
   padding-left: 15px;
   padding-right: 15px;
 
@@ -17,7 +17,7 @@
 }
 
 .kartlyn-header-left-section {
-  width: 180px;
+  width: 250px;
 }
 
 @media (max-width: 800px) {
@@ -48,11 +48,7 @@
 }
 
 .kartlyn-logo {
-  width: 100px;
-  margin-top: 5px;
-  background-color: white;
-  border-radius: 4px;
-  padding: 2px 5px;
+  width: calc(200px - 20%);
   box-sizing: border-box;
 }
 
@@ -86,6 +82,7 @@
 
   .mobile-right-section {
     cursor: pointer;
+
   }
 
   .menu-dropdown-show {
